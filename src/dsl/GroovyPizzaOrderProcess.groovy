@@ -1,7 +1,8 @@
 package dsl
 
-def dslDef = new File('/n/groovy/misc_groovy/src/dsl/GroovyPizzaDSL.groovy').text
-def dsl = new File('/n/groovy/misc_groovy/src/dsl/orderPizza.dsl').text
+def cl = this.class.classLoader
+def dsl = cl.getResource("dsl/orderPizza.dsl").text
+def dslDef = cl.getResource("dsl/pizza.dsl").text
 
 def script = """
 ${dslDef}
