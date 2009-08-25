@@ -10,7 +10,10 @@ println "Interfaces..."
 String.interfaces.each { println it }
 
 println "Methods..."
-String.interfaces.each { println it }
+String.methods.each { println it }
+
+println "Fields..."
+String.fields.each { println it }
 
 println evaluate("['abc' : 'def', 'ghi' : [1,2,3,4,5], 'jkl' : '100']")
 
