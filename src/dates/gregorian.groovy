@@ -19,3 +19,5 @@ println "Hour ${c.hour}"
 println "Minute ${c.minute}"
 println "Second ${c.second}"
 println "${c.year}" + "${c.month}".padLeft(2,'0') + "${c.day}".padLeft(2,'0') + "${c.hour}".padLeft(2,'0') + "${c.minute}".padLeft(2,'0') + "${c.second}".padLeft(2,'0') 
+
+println String.format('%tY%<tm%<td%<tH%<tM%<tS', c)
