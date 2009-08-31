@@ -6,7 +6,7 @@ def bar(params, name) {
   println "Bar got params=$params, name=$name"
 }
 
-def baz(name, params, conditions) {
+def baz(String name, params, conditions) {
   println "Baz got name=$name params=$params conditions=$conditions"
 }
 
@@ -15,4 +15,4 @@ foo(*[4,5,6])
 
 bar(one: 'e', bee: 'a', 'abc')
 
-baz('abc', category: 'Guns', id: 123, 'where category = ?')
+baz('abc', [category: 'Guns', id: 123], 'where category = ?')
