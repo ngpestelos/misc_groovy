@@ -3,8 +3,9 @@ def gets() {
   new BufferedReader(isr).readLine()
 }
 
+def shell = new GroovyShell()
 println "Welcome! (Ctrl-C to exit)"
 while (1) {
   print ">> "
-  println gets()
+  shell.evaluate(gets())
 }
