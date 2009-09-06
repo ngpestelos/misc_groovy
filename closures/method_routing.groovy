@@ -5,6 +5,7 @@ class Handler {
 
 class Example {
   def f1() { println "f1 of Example called ..." }
+  def f2() { println "f2 of Example called ..." }
 
   def foo(closure) {
     closure.delegate = new Handler()
